@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:usersDb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+
+authentication:
+  jwt:
+    secret: bXlzdXBlcnNlY3JldA==
+    expiration-period-seconds: 600
+  credentials:
+    admin:
+      username: admin
+      password: password
+      roles:
+        - ADMIN
+        - USER
+    user:
+      username: user
+      password: password
+      roles:
+        - USER
