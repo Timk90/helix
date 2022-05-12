@@ -1,0 +1,156 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Users",
+		"_postman_id": "25d3e02d-1a2b-05dc-17ff-27dd5c159a79",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get JWT token",
+			"request": {
+				"url": "localhost:8080/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"admin\",\n\t\"password\": \"password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZmQwNDRiNzQ3NmI0NGZlOTk0MWE4NWVlMGE3OWI1MCIsImV4cCI6MTY1MjM0MDgxNiwiaWF0IjoxNjUyMzQwMjE2LCJpc3MiOiJhZG1pbiJ9.DQukMIKEiS32mZiDVRSkTMdASI50WxO3go0ceyVtN4U",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Robert\",\n    \"birthDate\": \"2001-02-12\",\n    \"email\": \"rob@domain.com\",\n    \"phoneNumber\": 232882311,\n    \"height\": 0,\n    \"lastUpdatedTime\": \"2022-05-12T10:24:43.3356902\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZmQwNDRiNzQ3NmI0NGZlOTk0MWE4NWVlMGE3OWI1MCIsImV4cCI6MTY1MjM0MDgxNiwiaWF0IjoxNjUyMzQwMjE2LCJpc3MiOiJhZG1pbiJ9.DQukMIKEiS32mZiDVRSkTMdASI50WxO3go0ceyVtN4U",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"name\": \"Robertissiomo\",\n    \"birthDate\": \"2001-02-12\",\n    \"email\": \"rob2@domain.com\",\n    \"phoneNumber\": 232882311,\n    \"height\": 200,\n    \"lastUpdatedTime\": \"2022-05-12T10:24:43.3356902\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"url": "localhost:8080/users/6",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZmQwNDRiNzQ3NmI0NGZlOTk0MWE4NWVlMGE3OWI1MCIsImV4cCI6MTY1MjM0MDgxNiwiaWF0IjoxNjUyMzQwMjE2LCJpc3MiOiJhZG1pbiJ9.DQukMIKEiS32mZiDVRSkTMdASI50WxO3go0ceyVtN4U",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"name\": \"Robertissiomo\",\n    \"birthDate\": \"2001-02-12\",\n    \"email\": \"rob2@domain.com\",\n    \"phoneNumber\": 232882311,\n    \"height\": 200,\n    \"lastUpdatedTime\": \"2022-05-12T10:24:43.3356902\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by id",
+			"request": {
+				"url": "localhost:8080/users/6",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZmQwNDRiNzQ3NmI0NGZlOTk0MWE4NWVlMGE3OWI1MCIsImV4cCI6MTY1MjM0MDgxNiwiaWF0IjoxNjUyMzQwMjE2LCJpc3MiOiJhZG1pbiJ9.DQukMIKEiS32mZiDVRSkTMdASI50WxO3go0ceyVtN4U",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"name\": \"Robertissiomo\",\n    \"birthDate\": \"2001-02-12\",\n    \"email\": \"rob2@domain.com\",\n    \"phoneNumber\": 232882311,\n    \"height\": 200,\n    \"lastUpdatedTime\": \"2022-05-12T10:24:43.3356902\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"url": "localhost:8080/users",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZmQwNDRiNzQ3NmI0NGZlOTk0MWE4NWVlMGE3OWI1MCIsImV4cCI6MTY1MjM0MDgxNiwiaWF0IjoxNjUyMzQwMjE2LCJpc3MiOiJhZG1pbiJ9.DQukMIKEiS32mZiDVRSkTMdASI50WxO3go0ceyVtN4U",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"name\": \"Robertissiomo\",\n    \"birthDate\": \"2001-02-12\",\n    \"email\": \"rob2@domain.com\",\n    \"phoneNumber\": 232882311,\n    \"height\": 200,\n    \"lastUpdatedTime\": \"2022-05-12T10:24:43.3356902\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
