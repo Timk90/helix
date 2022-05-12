@@ -53,6 +53,31 @@
 			"response": []
 		},
 		{
+			"name": "Start batch update",
+			"request": {
+				"url": "localhost:8080/batch/operations",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNWQ4ODJhMTNmZTU0ZTI5ODE4OTAzNjhjMGY0NzJiMyIsImV4cCI6MTY1MjM3NjU0MCwiaWF0IjoxNjUyMzc1OTQwLCJpc3MiOiJhZG1pbiJ9.8fdwSE8hIMP51XkAJqwKkRgu8j7P89AP-45ErQVqyuU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
 			"name": "Update user",
 			"request": {
 				"url": "localhost:8080/users",
@@ -135,7 +160,7 @@
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiI0ZmQwNDRiNzQ3NmI0NGZlOTk0MWE4NWVlMGE3OWI1MCIsImV4cCI6MTY1MjM0MDgxNiwiaWF0IjoxNjUyMzQwMjE2LCJpc3MiOiJhZG1pbiJ9.DQukMIKEiS32mZiDVRSkTMdASI50WxO3go0ceyVtN4U",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJhNWQ4ODJhMTNmZTU0ZTI5ODE4OTAzNjhjMGY0NzJiMyIsImV4cCI6MTY1MjM3NjU0MCwiaWF0IjoxNjUyMzc1OTQwLCJpc3MiOiJhZG1pbiJ9.8fdwSE8hIMP51XkAJqwKkRgu8j7P89AP-45ErQVqyuU",
 						"description": ""
 					},
 					{
