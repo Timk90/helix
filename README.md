@@ -28,3 +28,7 @@ to start the application one should execute:
 ```
 java -jar helix-demo-0.0.1-SNAPSHOT.jar
 ```
+health check endpoint is available as following:
+```shell
+POST https://localhost:8080/actuator/health
+```

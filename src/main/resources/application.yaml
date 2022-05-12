@@ -25,3 +25,9 @@ authentication:
       password: password
       roles:
         - USER
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
